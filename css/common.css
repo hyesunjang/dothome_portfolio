@@ -1,0 +1,276 @@
+.big{font-size:16px; font-weight:bold;}
+.space5{letter-spacing:5px;}
+.space10{letter-spacing:10px;}
+.space20{letter-spacing:20px;}
+.container{max-width:1280px; width:80%; margin:0 auto;}
+body{background-color:#eeeeee;}
+body.scrollNo{ overflow-y:hidden;}
+.Y{color:#fad939; font-weight:bold;}
+.center{text-align:center; display:inline-block;}
+
+
+/* #about img{display:inline-block; text-align:center; width:30%; margin:150px 0;} */
+
+/* #first{ width:50%;  top:0; left:0; }
+
+@@keyframes Animate {
+  0%{}
+  100%{}
+} */
+
+
+
+h2{color:#fad939; font-family:'GmarketSansBold'; font-size:30px; margin-bottom:20px;
+   text-align:center;}
+p{font-family:'GmarketSansMedium'; font-size:20px; text-align:center; margin-bottom:100px; color:grey;}
+
+
+#pop{display:none; position:fixed; background-color:rgba(0,0,0,0.5); z-index:100000;
+     left:0; top:0; right:0; bottom:0;}
+#popin{position:absolute; left:0; right:0; top:20px; margin:auto; bottom:20px; text-align:center;
+        overflow-y: scroll; overflow-x:hidden;  width: calc(100% - 30px); max-width: 504px;}
+#popin {}
+#popin img{width:100%;}
+#popin button{position:absolute; right:20px; top:20px; width:20px; height:20px; background:white;
+              font-size:20px; display:inline-block; border:0px; color:grey; }
+
+
+/*상단*/
+header{position:fixed; width:100%; z-index:10; border-bottom:1px solid grey;
+        background-color:white; padding:10px 0; top:0;}
+header h1{position:relative; width:200px; height:50px; top:10px; display:inline-block;
+          vertical-align:middle;}
+
+#nav{position:relative; float:right; font-size:23px; font-family:'Black Han Sans', sans-serif;
+      border-bottom:0px solid white; top:25px;}
+#nav a:hover, #nav a.on, #nav a:active{border-bottom:3px solid #fad939;}
+#nav span{margin:0 10px; top:25px;}
+
+#m_nav{float:right; display:none; padding:0; margin:0; font-family:'Black Han Sans', sans-serif;}
+#m_nav img{position:relative; width:30px; height:30px; top:10px;}
+
+#mobile{position:fixed; top:50px; max-width:40%; min-width:30%; height:100%; background-color:rgba(0,0,0,0.5);
+        right:0; display:none;}
+#mobile li a{font-family:'Black Han Sans', sans-serif; color:white; font-size:23px;
+              line-height:2.5; text-align:right; padding:0 30px;}
+#mobile li a:hover, #mobile a.on, #mobile a:active{color:#fad939;}
+
+
+/*about*/
+#about{position:relative; padding:80px 0; margin-top:50px;}
+#about p{margin-bottom:100px;}
+
+.clear:after{ content: ""; display: block; clear:both}
+
+/* #about_me{max-width:1280px; width:calc(100% - 40px); margin:0 auto;} */
+
+#about_me img{display:inline-block; width:40%; height:100%;
+              text-align:center; vertical-align:middle; float:left;}
+#about_me img:first-child{margin:0 70px;}
+#resume{position:absolute; bottom:0; left:50%; transform:translate(37px, -76px);}
+#resume a{display:block; width:155px; font-size:16px; line-height:1.5; color:#ed1d24;
+          border:2px solid #fad939; font-family:'GmarketSansMedium'; border-radius:50px;
+          background-color:#fad939; text-align:center; width:155px; }
+#resume a:hover{background-color:#ed1d24; color:#fad939; border:2px solid #ed1d24;}
+
+
+
+/*Career*/
+#career{position:relative; padding:80px 0;}
+#career img{width:100%;}
+#career li{width:150px; height:150px; border:0px solid black; border-radius:50%;
+            font-family:'GmarketSansLight'; display:inline-block; margin:80px 10px;
+            text-align: center; background-color:white;}
+#career li:before{content:""; display:block; height:170px;}
+
+.circle-chart-wrap{padding:20px; text-align:center;}
+.circle-chart-wrap .circle-chart{margin:50px 15px; display:inline-block; vertical-align:top;}
+.circle-chart,
+.circle-chart *{box-sizing:border-box;}
+.circle-chart{width:150px; height:150px; position:relative; opacity:1;}
+.circle-chart .chart-box{width:100%; height:100%; padding:7px;}
+.circle-chart .chart-circle-base{position:absolute; left:0; top:0; right:0; bottom:0;
+                                  border:14px solid #ddd; border-radius:50%;}
+.circle-chart .chart-circle-base strong{position:absolute; font-family:'GmarketSansLight';
+                                        top:calc(100% + 35px); left:0; right:0; text-align:center;}
+.circle-chart .chart-box svg{width:100%; height:100%; overflow:visible; position:relative;
+	transform: rotateY(180deg) rotate(-90deg); opacity: 0;
+}
+.chart-circle-progress{fill:transparent; stroke-width:14; stroke:#7661cf;}
+.circle-chart .per-num{width:100%; margin:-17px 0 0; text-align:center; font-size:20px;
+                      font-weight:bold; color:#7661cf; position:absolute; left:0; top:50%;}
+.circle-chart .per-num span{font-size:25px; vertical-align:-1px;}
+
+.active.circle-chart{opacity:1}
+.active .chart-circle-progress{
+  -ms-transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+.circle-chart.active .chart-box svg{ opacity:1}
+
+.circle-chart.theme02 .per-num{color:#fd567d;}
+.circle-chart.theme02 .chart-circle-progress{stroke:#fd567d;}
+.circle-chart.theme03 .per-num{color:#ff8e1e;}
+.circle-chart.theme03 .chart-circle-progress{stroke:#ff8e1e;}
+.circle-chart.theme04 .per-num{color:#20b78c;}
+.circle-chart.theme04 .chart-circle-progress{stroke:#20b78c;}
+.circle-chart.theme05 .per-num{color:#3eaaf9;}
+.circle-chart.theme05 .chart-circle-progress{stroke:#3eaaf9;}
+
+#career ul{text-align:center;}
+
+
+
+
+/*quick menu*/
+#qmenu{position:fixed; z-index:1000; text-align:center; right:20px; top:50%;
+        transform:translateY(-50%); font-family:'GmarketSansBold'; font-size:16px;
+        padding-top:5px; }
+#qmenu h3{width:70px; height:20px; border:1px solid #c7cac4; border-radius: 20px;
+        background-color:#c7cac4; color:white; margin-bottom:20px; line-height: 20px;}
+#qlogo{position:relative;  width:60px; height:380px; padding:10px 0; margin:0 auto;
+        background-color:white; border:1px solid black; border-radius: 50px; color:black;
+        z-index:1000;}
+#qlogo img{width:40px; height:40px; margin:10px;}
+#qlogo li{text-align:center; font-size:10px; font-family:'GmarketSansLight'; color:black;}
+#top{position:relative; margin:0 auto; width:50px; height:50px; border:1px solid black;
+      border-radius:50%; background-color:black; color:white; z-index:1000; margin-top:20px;}
+#top a{color:white; text-align:center; line-height: 50px;}
+
+
+/*portfolio*/
+#portfolio{position:relative; padding:80px 0; color:black; margin-bottom:100px;}
+
+#contents{display:none; position:fixed; background-color:rgba(0,0,0,0.5); z-index:100000;
+           left:0; top:0; right:0; bottom:0;}
+#contents > div{position:absolute; left:0; right:0; top:20px;
+                width: calc(100% - 80px); max-width: 600px;
+                margin:auto; bottom:20px; text-align:center; overflow-y: scroll; overflow-x:hidden;}
+#contents > div.targetDiv{ display: block}
+#contents > div img{width:100%;}
+#contents > div button{position:absolute; right:20px; top:20px; width:20px; height:20px; background:0 0;
+                      font-size:20px; display:inline-block; border:0px; color:grey; margin-left:245px;}
+#portfolio li{font-family:'GmarketSansLight'; border:0px solid black; width:250px;
+              margin:30px 10px 10px; display:inline-block; padding:0;  text-align:center;
+               }
+#portfolio p{margin-top:15px;}
+/* #portfolio li:after{content:"00"; display:block; line-height:1.5; text-align: center;} */
+#portfolio li a{display: block; width:100%;  height:0; padding-bottom:75%; overflow: hidden;
+                 position:relative; background-repeat: no-repeat; background-position: center; background-size: 100% auto;
+               background-color:white;}
+
+#portfolio li:hover a:before{content:""; display:block; position:absolute; left:0; right:0; top:0; bottom:0;
+  background-color:rgba(0,0,0,0.5);}
+#portfolio img{width:100%;}
+
+
+
+/*Pre-interview*/
+
+#Pre-interview{}
+#Pre-interview dl{line-height:3; font-family:'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; width:90%; transform:translateX(5%);}
+#Pre-interview *{vertical-align:middle; border:0px solid white; border-radius:30px; }
+#Pre-interview dl > *{padding:5px 20px;}
+#Pre-interview dl > *::before{margin-right:15px;}
+#Pre-interview dt{margin:10px 0; background-color:white;}
+#Pre-interview dt:before{content:"Q"; padding-left:20px;}
+#Pre-interview dt:after{content: "+"; float:right; padding-right:20px;}
+#Pre-interview dt.show::after{content :"-"}
+
+#Pre-interview dd:before{content:"A"; padding-left:20px;}
+#Pre-interview dd{background-color:#c7cac4; display:none; margin:10px 0;}
+
+
+#Pre-interview dt.show + dd{display: block;}
+
+
+/*contact*/
+#contact{position:relative; padding:80px 0;}
+#contact ul{text-align:center;}
+#contact li{display:inline-block; }
+#contact img{width:80px; height:80px; padding:0 15px; margin:0 auto;}
+
+
+@media(min-width:1251px){
+  #nav{top:15px;}
+  header h1{top:0;}
+}
+
+
+@media(min-width:991px) and (max-width:1250px){
+  #nav{font-size: 16px; top:15px;}
+  header h1{top:0;}
+  h2{font-size:25px;}
+}
+
+@media(max-width:990px){
+  h2{font-size:20px; margin-bottom:70px;}
+  p{margin-bottom:30px;}
+
+  #nav{display:none;}
+  #m_nav{display:block;}
+  header{height:50px; padding:0;}
+  header h1{width:100px; height:30px; top:10px;}
+
+  #qmenu{display:none}
+  #qmenu h3{display:none}
+  #qlogo{display:none}
+  #qlogo img{display:none}
+  #qlogo li{display:none}
+  #top{display:none}
+  #top a{display:none}
+
+  #about img:first-child{margin:0 30px;}
+  #resume{transform:translateX(-9px); width:90px;}
+  #resumea{width:90px;}
+  #about_me button{width:60px; height:20px; font-size:8px; line-height:16px;}
+
+  #career li{width:50px; height:50px; display:inline-block; margin:20px 10px; font-size:10px;}
+  #career li:before{content:""; display:block; height:60px;}
+
+  #portfolio li{display:inline-block; width:150px; margin:20px; font-size:10px;}
+  /* #portfolio li a{height:130px;} */
+  #portfolio p{font-size:10px;}
+
+  .box{line-height:2em; font-size:10px;}
+
+  #contact img{width:30px; height:30px; margin:0 auto; padding:10px;}
+}
+
+@media(min-width:0px) and (max-width:899px){
+
+  h2{margin-bottom:40px;}
+
+  #mobile li a{font-size:13px;}
+
+  #about img:first-child{margin:0 30px;}
+
+  #resume{left:58%; bottom:80px; width:90px;}
+  #resume a{font-size:8px; line-height:1.2; width:90px;}
+
+
+
+
+  #career li{width:30px; height:30px; display:inline-block; margin:10px 5px; font-size:8px;}
+  #career li:before{content:""; display:block; height:40px;}
+
+  .circle-chart{width:60px; height:60px; position:relative; opacity:0;}
+  .circle-chart .chart-circle-base strong{top:calc(100% + 25px); font-size:8px;}
+  .circle-chart .per-num{font-size:10px; line-height:35px;}
+  .circle-chart .per-num span{font-size:8px; line-height:35px;}
+  .chart-circle-progress {stroke-width: 8;  }
+  .circle-chart .chart-circle-base {border: 8px solid #ddd;}
+  .circle-chart .chart-box { padding: 3px;}
+  #portfolio li{display:inline-block; width:120px;  margin:10px; font-size:8px;}
+  /* #portfolio li a{height:100px;} */
+  #portfolio p{font-size:8px;}
+
+
+  #Pre-interview dl{line-height:2; font-size:10px;}
+}
+@media (max-width:400px){
+	#mobile{ max-width:none;}
+
+}
